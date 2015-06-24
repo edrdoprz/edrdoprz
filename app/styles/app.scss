@@ -1,0 +1,18 @@
+@import "settings";
+
+@import "foundation";
+
+.full {
+	height: 100%;
+}
+
+.welcome {
+	background-color: rgba(192, 216, 144, 1);
+	color: white;
+	height: 100%;
+	font-family: 'Roboto Condensed', sans-serif;
+
+	div {
+		top: 100px;
+	}
+}

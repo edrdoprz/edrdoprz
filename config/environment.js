@@ -16,6 +16,16 @@ module.exports = function(environment) {
     APP: {
       // Here you can pass flags/options to your application instance
       // when it is created
+    },
+    
+    googleFonts: [
+      'Roboto+Condensed'
+    ],
+ 
+    // Set or update content security policies 
+    contentSecurityPolicy: {
+      'font-src': "'self' fonts.gstatic.com",
+      'style-src': "'self' fonts.googleapis.com"
     }
   };
 
@@ -40,7 +50,11 @@ module.exports = function(environment) {
   }
 
   if (environment === 'production') {
-
+    // ENV.APP.LOG_RESOLVER = false;
+    // ENV.APP.LOG_ACTIVE_GENERATION = false;
+    // ENV.APP.LOG_TRANSITIONS = false;
+    // ENV.APP.LOG_TRANSITIONS_INTERNAL = false;
+    // ENV.APP.LOG_VIEW_LOOKUPS = false;
   }
 
   return ENV;
