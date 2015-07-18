@@ -4,6 +4,16 @@
 
 html { font-size: 62.5%; }
 
+h1 {
+	font-family: 'Roboto Condensed', sans-serif;
+	width: 100%;
+}
+
+h2 {
+	font-family: 'Roboto Condensed', sans-serif;
+	width: 100%;
+}
+
 .full {
 	height: 100%;
 }
@@ -16,12 +26,17 @@ html { font-size: 62.5%; }
 	padding: 2.5rem 4.0rem;
 }
 
+.name {
+	overflow: hidden;
+}
+
 .contact {
 	list-style: none;
 
 	li {
 		padding-bottom: 0.5rem;
 		font-size: 2.2rem;
+		width: 100%
 	}
 
 	li:first-child {
@@ -44,5 +59,130 @@ html { font-size: 62.5%; }
 			position: relative;
 			top: 0.3rem;
 		}
+	}
+}
+
+.mini-contact {
+	list-style: none;
+	display: none;
+	margin: 0;
+
+	li {
+		padding-bottom: 0.5rem;
+		font-size: 2.2rem;
+		padding-right: 2rem;
+		display: inline;
+	}
+
+	li:nth-child(2) {
+		span {
+			position: relative;
+			top: 0.9rem;
+			font-size: 5rem;
+		}
+	}
+
+	img {
+		position: relative;
+		top: -0.1rem;
+		height: 3.2rem;
+		width: 3.2rem;
+	}
+
+	li:last-child {
+		padding-right: 0rem;
+
+		span {
+			position: relative;
+			top: 0.3rem;
+		}
+	}
+}
+
+@media only screen and (min-width: 400px) {
+	h1 {
+		font-size: 6rem;
+		line-height: 6rem;
+	}
+
+	h2 {
+		font-size: 2rem;
+		line-height: 2rem;
+	}
+}
+
+@media only screen and (min-width: 400px) and (max-width: 600px) {
+	.name {
+		text-align: center;
+	}
+
+	.contact {
+		display: none;
+	}
+
+	.mini-contact {
+		display: block;
+	  width: 100%;
+	  margin: 0;
+	  position: relative;
+	  text-align: center;
+	}
+}
+
+@media only screen and (min-width:600px) {
+	.name {
+		text-align: left;
+	}
+
+	.contact {
+	  position: fixed;
+	  right: 4.5rem;
+	  top: 2.5rem;
+	}
+}
+
+@media only screen and (min-width:600px) and (max-width: 850px) {
+	.contact {
+		li {
+			font-size: 1.5rem;
+		}
+
+		li:first-child {
+			height: 3.5rem;
+			span {
+				top: 0.45rem;
+				font-size: 2.9rem;
+			}
+		}
+
+		img {
+			position: relative;
+			height: 2.5rem;
+			width: 2.5rem;
+		}
+
+		li:last-child {
+			position: relative;
+			top: -0.5rem;
+			span {
+				position: relative;
+				top: 0.3rem;
+				font-size: 2.5rem;
+			}
+		}
+	}
+}
+
+@media only screen and (min-width: 850px) {
+	h1 {
+		font-size: 9rem;
+		line-height: 9rem;
+	}
+
+	h2 {
+		font-size: 3rem;
+		line-height: 3rem;
+		position: relative;
+		left: 0.5rem;
 	}
 }
