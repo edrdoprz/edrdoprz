@@ -46,6 +46,10 @@ hr {
 	list-style: none;
 	z-index: 99;
 
+	a {
+		color: inherit;
+	}
+
 	li {
 		padding-bottom: 0.5rem;
 		font-size: 2.2rem;
